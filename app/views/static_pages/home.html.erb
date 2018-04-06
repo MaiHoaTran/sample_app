@@ -1,6 +1,5 @@
-<h1><%= t :sample_app %></h1>
+<% provide :title, t("static_pages.home.title") %>
+<h1><%= t "static_pages.home.text_heading" %></h1>
 <p>
-  This is the home page for the
-  <%= link_to t("static_pages.link_title"), "http://www.railstutorial.org" %>
-  sample application.
+  <%= t "static_pages.home.text1" %> <%= link_to t("static_pages.home.text_link"), "http://www.railstutorial.org" %> <%= t "static_pages.home.text2" %>.
 </p>
