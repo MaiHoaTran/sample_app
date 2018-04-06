@@ -29,21 +29,30 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  base_title: "Ruby on Rails Tutorial Sample App"
+n:
   static_pages:
-    link_title: "Ruby on Rails Tutorial"
     home:
       title: "Home"
-      sample_app: "Samle App"
+      text_heading: "Sample App"
+      text_link: "Ruby on Rails Tutorial"
+      text1: "This is the home page for the"
+      text2: "sample application"
     about:
       title: "About"
-      link_to_book: "book"
-      link_to_screen: "screencast series"
-      link_to_ruby: "Ruby on Rails"
+      text_link_railst: "Ruby on Rails Tutorial"
+      text_link_book: "book"
+      text_link_screen: "screencast series"
+      text_link_rails: "Ruby on Rails"
+      text_p_1: "The"
+      text_p_2: "is a"
+      text_p_3: "and"
+      text_p_4: "to teach web development with"
+      text_p_5: "This is the sample application for the tutorial"
     contact:
       title: "Contact"
-      link_to_contact: "contact page"
+      text_link: "contact page"
+      text_p: "Contact the Ruby on Rails Tutorial about the sample app at the"
     help:
       title: "Help"
-      link_to_help: "Ruby on Rails Tutorial book"
+      text_link: "Ruby on Rails Tutorial book"
+      text_p: "Get help on the Ruby on Rails Tutorial at the"
