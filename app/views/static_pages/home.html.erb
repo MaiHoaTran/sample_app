@@ -1,5 +1,14 @@
-<% provide :title, t("static_pages.home.title") %>
-<h1><%= t "static_pages.home.text_heading" %></h1>
-<p>
-  <%= t "static_pages.home.text1" %> <%= link_to t("static_pages.home.text_link"), "http://www.railstutorial.org" %> <%= t "static_pages.home.text2" %>.
-</p>
+<div class="center jumbotron">
+  <h1><%= t "static_pages.home.text_heading_1" %></h1>
+
+  <h2>
+    <%= t "static_pages.home.text_heading_21" %>
+    <%= link_to t("base_title"), "http://www.railstutorial.
+    org/" %> <%= t "static_pages.home.text_heading_22" %>.
+  </h2>
+
+  <%= link_to t("static_pages.home.text_link_signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: t("static_pages.home.text_img_logo")), "http://rubyonrails.org/" %>
+<%= image_tag("kitten.jpg", alt: t("static_pages.home.text_img_kitten"), id: "kitten") %>

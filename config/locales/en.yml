@@ -29,25 +29,28 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-n:
+en:
   static_pages:
+    base_title: "Ruby on Rails Tutorial"
     home:
       title: "Home"
-      text_heading: "Sample App"
-      text_link: "Ruby on Rails Tutorial"
+      text_heading_1: "Welcome to the Sample App"
+      text_heading_21: "This is the home page for the"
+      text_heading_22: "sample application"
+      text_link_rails: "Ruby on Rails Tutorial"
+      text_link_signup: "Sign up now!"
       text1: "This is the home page for the"
       text2: "sample application"
+      text_img_logo: "Rails logo"
+      text_img_kitten: "Kitten"
     about:
       title: "About"
       text_link_railst: "Ruby on Rails Tutorial"
       text_link_book: "book"
       text_link_screen: "screencast series"
       text_link_rails: "Ruby on Rails"
-      text_p_1: "The"
-      text_p_2: "is a"
-      text_p_3: "and"
-      text_p_4: "to teach web development with"
-      text_p_5: "This is the sample application for the tutorial"
+      text_p_1: "The %{link_railst} is a %{link_book} and %{link_screen} to teach web development with %{link_rails}"
+      text_p_2: "This is the sample application for the tutorial"
     contact:
       title: "Contact"
       text_link: "contact page"
@@ -56,3 +59,9 @@ n:
       title: "Help"
       text_link: "Ruby on Rails Tutorial book"
       text_p: "Get help on the Ruby on Rails Tutorial at the"
+    footer:
+      small_footer: "The %{page} by %{author}"
+  users:
+    new:
+      title: "Sign up"
+      text_p: "This will be a signup page for new users"

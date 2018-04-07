@@ -5,5 +5,6 @@ require "rails/test_help"
 module ActiveSupport
   class TestCase
     fixtures :all
+    include ApplicationHelper
   end
 end
