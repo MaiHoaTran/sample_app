@@ -1,6 +1,9 @@
 <% provide :title, t("static_pages.about.title") %>
 <h1><%= t "static_pages.about.title" %></h1>
 <p>
-  The <%= link_to t("link_title"), "http://www.railstutorial.org/" %> is a
-  <%= link_to t("link_to_book"), "http://www.railstutorial.org/" %> and <%= link_to t("link_to_screen"), "http://screencasts.railstutorial.org/" %> to teach web development with <%= link_to t("link_to_ruby"), "http://rubyonrails.org/" %> This is the sample application for the tutorial.
+  <%= t(".text_p_1", link_railst: link_to(t(".text_link_railst"), "http://www.railstutorial.org/"), link_book: link_to(t(".text_link_book"), "http://www.railstutorial.org/"), link_screen: link_to(t(".text_link_screen"), "http://screencasts.railstutorial.org/"), link_rails: link_to(t(".text_link_rails"), "http://rubyonrails.org/")).html_safe %>.
 </p>
+<p>
+  <%= t ".text_p_2" %>.
+</p>
+
