@@ -1,0 +1,5 @@
+user:
+  max_length_email: 255
+  min_length_password: 6
+  max_length_name: 50
+  size_avatar: 80
