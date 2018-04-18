@@ -74,7 +74,8 @@ en:
   shared:
     error_messages:
       text_div_1: "The form contains"
-      error: errors
+      one: "%{count} error"
+      other: "%{count} errors"
   sessions:
     new:
       title: "Log in"
