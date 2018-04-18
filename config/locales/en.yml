@@ -31,7 +31,7 @@
 
 en:
   static_pages:
-    base_title: "Ruby on Rails Tutorial"
+    base_title: "Ruby on Rails Tutorial Sample App"
     home:
       title: "Home"
       text_heading_1: "Welcome to the Sample App"
@@ -59,9 +59,33 @@ en:
       title: "Help"
       text_link: "Ruby on Rails Tutorial book"
       text_p: "Get help on the Ruby on Rails Tutorial at the"
-    footer:
-      small_footer: "The %{page} by %{author}"
+    error404:
+      title: "Error 404"
+      text_p: "Can't find the page"
+  footer:
+    small_footer: "The %{page} by %{author}"
   users:
     new:
       title: "Sign up"
       text_p: "This will be a signup page for new users"
+      submit: "Create account"
+      confirmation: "Confirmation"
+      success_msg_login: "Welcome to the Sample App!"
+  shared:
+    error_messages:
+      text_div_1: "The form contains"
+      one: "%{count} error"
+      other: "%{count} errors"
+  sessions:
+    new:
+      title: "Log in"
+      sinup: "Sign up now!"
+      new_user: "New user"
+      error_messages: "Invalid email/password combination"
+  header:
+    profile: "Profile"
+    settings: "Settings"
+    account: "Account"
+    users: "Users"
+    logout: "Log out"
+

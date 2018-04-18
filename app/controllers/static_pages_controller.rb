@@ -6,4 +6,6 @@ class StaticPagesController < ApplicationController
   def contact; end
 
   def about; end
+
+  def error_404; end
 end
