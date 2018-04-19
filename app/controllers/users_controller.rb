@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: %i(edit update show correct_user)
-  before_action :logged_in_user, only: %i(index edit update destroy show)
+  before_action :load_user, except: %i(index new create)
+  before_action :logged_in_user, except: %i(new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
@@ -9,10 +9,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    if User.find_by(id: params[:id]).destroy
-      flash[:success] = I18n.t "users.index.success_msg"
+    if @user.destroy
+      flash[:success] = t "users.index.success_msg"
     else
-      flash[:danger] = I18n.t "users.index.error_msg"
+      flash[:danger] = t "users.index.error_msg"
     end
     redirect_to users_url
   end
@@ -33,7 +33,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       @user.send_activation_email
-      flash[:info] = "Please check your email to activate your account."
+      flash[:info] = t "users.new.infor_activation"
       redirect_to root_url
     else
       render :new
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update user_params
-      flash[:success] = I18n.t "users.edit.success_msg"
+      flash[:success] = t "users.edit.success_msg"
       redirect_to @user
     else
       render :edit
@@ -54,13 +54,13 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit :name, :email, :password, :password_confirmation
   end
 
   def logged_in_user
     return if logged_in?
     store_location
-    flash[:danger] = I18n.t "message_not_login"
+    flash[:danger] = t "message_not_login"
     redirect_to login_url
   end
 
@@ -68,11 +68,14 @@ class UsersController < ApplicationController
     redirect_to root_url unless current_user? @user
   end
 
-  def admin_user
-    redirect_to root_url unless current_user.admin?
-  end
-
   def load_user
     @user = User.find_by id: params[:id]
+    return if @user.present?
+    flash[:danger] = t "static_pages.home.not_find_user"
+    redirect_to root_url
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
   end
 end
