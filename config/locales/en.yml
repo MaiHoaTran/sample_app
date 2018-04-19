@@ -43,6 +43,7 @@ en:
       text2: "sample application"
       text_img_logo: "Rails logo"
       text_img_kitten: "Kitten"
+      heading_feed: "Micropost Feed"
     about:
       title: "About"
       text_link_railst: "Ruby on Rails Tutorial"
@@ -65,27 +66,94 @@ en:
   footer:
     small_footer: "The %{page} by %{author}"
   users:
+    index:
+      title: "All users"
+      delete : "Delete"
+      confirm: "You sure?"
+      success_msg: "User deleted"
+      error_msg: "Deleted fail"
+      follow: "Follow"
+      unfollow: "Unfollow"
     new:
       title: "Sign up"
       text_p: "This will be a signup page for new users"
       submit: "Create account"
       confirmation: "Confirmation"
       success_msg_login: "Welcome to the Sample App!"
+      info_activation: "Please check your email to activate your account."
+    edit:
+      title: "Edit user"
+      text_h1: "Update your profile"
+      submit: "Save changes"
+      submit_image: "change"
+      success_msg: "Profile updated"
+    show:
+      microposts: "Microposts"
+    show_follow:
+      followers: "Followers"
+      following: "Following"
+      view_profile: "view my profile"
+      microposts: "Microposts:"
   shared:
     error_messages:
       text_div_1: "The form contains"
       one: "%{count} error"
       other: "%{count} errors"
+    user_infor:
+      view_profile: "view my profile"
+      one: "%{count} micropost"
+      other: "%{count} microposts"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+      alert: "Maximum file size is 5MB. Please choose a smaller file."
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       title: "Log in"
       sinup: "Sign up now!"
       new_user: "New user"
       error_messages: "Invalid email/password combination"
+      remember: "Remember me on this computer"
+      account_not_actived: "Account not activated."
+      check_email: "Check your email for the activation link."
+      forgot_password: "(forgot password)"
   header:
     profile: "Profile"
     settings: "Settings"
     account: "Account"
     users: "Users"
     logout: "Log out"
-
+  message_not_login: "Please log in."
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+      infor_msg: "Email sent with password reset instructions"
+      danger_msg: "Email address not found"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      danger_msg: "Password reset has expired."
+      success_msg: "Password has been reset."
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      text_h1: "Sample App"
+      text_p1: "Hi %{name},"
+      text_p2: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    password_reset:
+      subject: "Password reset"
+      text_p1: "To reset your password click the link below:"
+      text_p2: "This link will expire in two hours."
+      text_p3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  microposts:
+    success_create: "Micropost created!"
+    success_delete: "Micropost deleted"
+    danger_msg: "Can't delete"
+    micropost:
+      text_post: "Post %{time} ago"
+      delete: "delete"
