@@ -12,6 +12,8 @@ gem "bcrypt", "3.1.11"
 gem "faker"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
 gem "jquery-rails"
 gem "bootstrap-sass", "3.3.7"
 gem "config"
@@ -59,6 +61,18 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
+end
+
+group :test do
+  gem "rails-controller-testing"
+  gem "minitest-reporters"
+  gem "guard"
+  gem "guard-minitest"
+end
+
+group :production do
+  gem "pg"
+  gem "fog"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

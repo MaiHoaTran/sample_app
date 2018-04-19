@@ -21,6 +21,7 @@ class UsersController < ApplicationController
     if @user.blank?
       redirect_to signup_path
     else
+      @microposts = @user.microposts.paginate page: params[:page], per_page: Settings.user.number_items_per_page
       render :show
     end
   end

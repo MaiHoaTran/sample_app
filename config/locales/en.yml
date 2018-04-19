@@ -95,6 +95,14 @@ en:
       text_div_1: "The form contains"
       one: "%{count} error"
       other: "%{count} errors"
+    user_infor:
+      view_profile: "view my profile"
+      one: "%{count} micropost"
+      other: "%{count} microposts"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+      alert: "Maximum file size is 5MB. Please choose a smaller file."
   sessions:
     new:
       title: "Log in"
@@ -107,6 +115,7 @@ en:
       email: "Email"
       password: "Password"
       remember_me: "Remember me"
+      forgot_password: "(forgot password)"
   header:
     profile: "Profile"
     settings: "Settings"
@@ -114,4 +123,34 @@ en:
     users: "Users"
     logout: "Log out"
   message_not_login: "Please log in."
-
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+      infor_msg: "Email sent with password reset instructions"
+      danger_msg: "Email address not found"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      danger_msg: "Password reset has expired."
+      success_msg: "Password has been reset."
+      password_not_empty: "Password can't be empty"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      text_h1: "Sample App"
+      text_p1: "Hi %{name},"
+      text_p2: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    password_reset:
+      subject: "Password reset"
+      text_p1: "To reset your password click the link below:"
+      text_p2: "This link will expire in two hours."
+      text_p3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  microposts:
+    success_create: "Micropost created!"
+    success_delete: "Micropost deleted"
+    danger_msg: "Can't delete"
+    micropost:
+      text_post: "Post %{time} ago"
+      delete: "delete"
