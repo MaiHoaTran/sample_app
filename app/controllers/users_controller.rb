@@ -78,4 +78,23 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to root_url unless current_user.admin?
   end
+
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = I18n.t "message_not_login"
+    redirect_to login_url
+  end
+
+  def correct_user
+    redirect_to root_url unless current_user? @user
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
+  end
+
+  def load_user
+    @user = User.find_by id: params[:id]
+  end
 end
