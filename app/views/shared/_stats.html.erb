@@ -1,0 +1,6 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <%= link_to content_tag(:strong, @user.following.count, id: "following", class: "stat") + t("shared.stats.following"), following_user_path(@user) %>
+
+  <%= link_to content_tag(:strong, @user.followers.count, id: "followers",class: "stat") + t("shared.stats.followers"), followers_user_path(@user) %>
+</div>
