@@ -1,5 +1,5 @@
-Hi <%= @user.name %>,
+<%= t ".text_h1" %>
 
-Welcome to the Sample App! Click on the link below to activate your account:
+<%= t ".text_p1", name: @user.name %>
 
 <%= edit_account_activation_url(@user.activation_token, email: @user.email) %>

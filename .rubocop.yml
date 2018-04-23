@@ -28,6 +28,7 @@ AllCops:
     - 'Capfile'
     - 'Rakefile'
     - 'config.ru'
+    - 'test/integration/*.rb'
 Documentation:
     Enabled: false
 # By default, the rails cops are not run. Override in project or home
