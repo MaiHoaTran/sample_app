@@ -2,7 +2,13 @@ user:
   max_length_email: 255
   min_length_password: 6
   max_length_name: 50
-  size_avatar: 80
+  size_avatar: 50
   number_items_per_page: 10
 session:
   remember: "1"
+micropost:
+  content_length: 140
+  picture_size: 5
+  picture_error: "should be less than 5MB"
+  picture_heigth_max: 300
+  picture_length_max: 300
