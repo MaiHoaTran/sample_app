@@ -4,5 +4,6 @@ user:
   max_length_name: 50
   size_avatar: 80
   number_items_per_page: 10
+  time_reset_password: 2
 session:
   remember: "1"
