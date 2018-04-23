@@ -65,12 +65,24 @@ en:
   footer:
     small_footer: "The %{page} by %{author}"
   users:
+    index:
+      title: "All users"
+      delete : "Delete"
+      confirm: "You sure?"
+      success_msg: "User deleted"
+      error_msg: "Deleted fail"
     new:
       title: "Sign up"
       text_p: "This will be a signup page for new users"
       submit: "Create account"
       confirmation: "Confirmation"
       success_msg_login: "Welcome to the Sample App!"
+    edit:
+      title: "Edit user"
+      text_h1: "Update your profile"
+      submit: "Save changes"
+      submit_image: "change"
+      success_msg: "Profile updated"
   shared:
     error_messages:
       text_div_1: "The form contains"
@@ -82,10 +94,14 @@ en:
       sinup: "Sign up now!"
       new_user: "New user"
       error_messages: "Invalid email/password combination"
+      remember: "Remember me on this computer"
+      account_not_actived: "Account not activated."
+      check_email: "Check your email for the activation link."
   header:
     profile: "Profile"
     settings: "Settings"
     account: "Account"
     users: "Users"
     logout: "Log out"
+  message_not_login: "Please log in."
 
