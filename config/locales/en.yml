@@ -43,6 +43,7 @@ en:
       text2: "sample application"
       text_img_logo: "Rails logo"
       text_img_kitten: "Kitten"
+      not_find_user: "Can't not fing the user"
     about:
       title: "About"
       text_link_railst: "Ruby on Rails Tutorial"
@@ -77,12 +78,18 @@ en:
       submit: "Create account"
       confirmation: "Confirmation"
       success_msg_login: "Welcome to the Sample App!"
+      infor_activation: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       text_h1: "Update your profile"
       submit: "Save changes"
       submit_image: "change"
       success_msg: "Profile updated"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirmation"
   shared:
     error_messages:
       text_div_1: "The form contains"
@@ -97,6 +104,9 @@ en:
       remember: "Remember me on this computer"
       account_not_actived: "Account not activated."
       check_email: "Check your email for the activation link."
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember me"
   header:
     profile: "Profile"
     settings: "Settings"
